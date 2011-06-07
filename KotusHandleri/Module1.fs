@@ -11,7 +11,7 @@ let rec canBeFormed (x : string) (y : string) =
                 if (found = -1) then false
                 else canBeFormed (x.Substring(1)) (y.Remove(found, 1))
 
-let fileparsed = XElement.Load(@"c:\Kotusprojekti\Kali\KotusHandleri\kotus-sanalista_v1.xml") 
+let fileparsed = XElement.Load(@"c:\KotusSolver\KotusHandleri\kotus-sanalista_v1.xml") 
 
 let content ( file : XElement) y = 
                 file.Elements(XName.Get("st")) |> Seq.map (fun x -> x.Element(XName.Get("s"))) |> Seq.map (fun x -> x.Value)
