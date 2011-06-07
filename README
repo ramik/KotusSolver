@@ -1,0 +1,5 @@
+This is simple solution for showing C# and F# interoperability. As a "side effect", this can used to resolve Alypaa kieli game ;) 
+Uses linq to xml in F#. 
+
+Functionality: 
+From given letters it finds all finnish words that are specified by Kotus (finnish language research center). 
